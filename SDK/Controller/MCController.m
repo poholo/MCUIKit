@@ -29,6 +29,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     MCLog(@"%@ loaded", NSStringFromClass([self class]));
+    self.view.backgroundColor = [UIColor whiteColor];
     [self viewLoading];
 
     self.edgesForExtendedLayout = UIRectEdgeNone;

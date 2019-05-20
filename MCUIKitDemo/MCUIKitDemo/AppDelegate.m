@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "MCNavController.h"
+#import "ListController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +19,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    ListController *listVC = [ListController new];
+    MCNavController *nav = [[MCNavController alloc] initWithRootViewController:listVC];
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+
+    self.window.rootViewController = nav;
+    [self.window makeKeyAndVisible];
     return YES;
 }
 
