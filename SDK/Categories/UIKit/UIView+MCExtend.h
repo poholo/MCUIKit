@@ -7,7 +7,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIView (Extend)
+@interface UIView (MCExtend)
 
 @property(nonatomic, assign) CGFloat mm_x;
 @property(nonatomic, assign) CGFloat mm_y;

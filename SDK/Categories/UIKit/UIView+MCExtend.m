@@ -3,10 +3,10 @@
 // Copyright (c) 2017 poholo Inc. All rights reserved.
 //
 
-#import "UIView+Extend.h"
+#import "UIView+MCExtend.h"
 
 
-@implementation UIView (Extend)
+@implementation UIView (MCExtend)
 
 - (CGFloat)mm_x {
     return self.frame.origin.x;

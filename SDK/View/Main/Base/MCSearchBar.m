@@ -10,7 +10,7 @@
 
 #import "MCColor.h"
 #import "UIImage+MCCreate.h"
-#import "UIView+Extend.h"
+#import "UIView+MCExtend.h"
 #import "UIView+MCCorner.h"
 
 @interface MCSearchBar ()

@@ -14,6 +14,8 @@
 		1A6667B694EC4E43320016E0 /* TestRefreshTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A66666B3AC43EFB11249BFC /* TestRefreshTableController.m */; };
 		1A666A2D910791E0D022D901 /* ListDataVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A6664BBFAC5A28BD783396A /* ListDataVM.m */; };
 		1A666B2EBEB04CEA9D1F5BEB /* ListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A6662A705AC350667111B05 /* ListController.m */; };
+		256FCB1122CD9866002E4A9B /* MCToastUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 256FCB0F22CD9866002E4A9B /* MCToastUtils.m */; };
+		256FCB1222CD9866002E4A9B /* UIView+MCToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 256FCB1022CD9866002E4A9B /* UIView+MCToast.m */; };
 		25D0B207222E81DE003C9B2D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 25D0B206222E81DE003C9B2D /* AppDelegate.m */; };
 		25D0B20A222E81DE003C9B2D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25D0B209222E81DE003C9B2D /* ViewController.m */; };
 		25D0B20D222E81DE003C9B2D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25D0B20B222E81DE003C9B2D /* Main.storyboard */; };
@@ -54,7 +56,7 @@
 		25D0B2DF222E8209003C9B2D /* MCHUDView.m in Sources */ = {isa = PBXBuildFile; fileRef = 25D0B26B222E8209003C9B2D /* MCHUDView.m */; };
 		25D0B2E0222E8209003C9B2D /* MCProgressHUDView.m in Sources */ = {isa = PBXBuildFile; fileRef = 25D0B26C222E8209003C9B2D /* MCProgressHUDView.m */; };
 		25D0B2E1222E8209003C9B2D /* UIButton+MCBackgroundColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 25D0B271222E8209003C9B2D /* UIButton+MCBackgroundColor.m */; };
-		25D0B2E2222E8209003C9B2D /* UIView+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = 25D0B273222E8209003C9B2D /* UIView+Extend.m */; };
+		25D0B2E2222E8209003C9B2D /* UIView+MCExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 25D0B273222E8209003C9B2D /* UIView+MCExtend.m */; };
 		25D0B2E3222E8209003C9B2D /* UIImage+MCCompress.m in Sources */ = {isa = PBXBuildFile; fileRef = 25D0B275222E8209003C9B2D /* UIImage+MCCompress.m */; };
 		25D0B2E4222E8209003C9B2D /* UIButton+MCImageText.m in Sources */ = {isa = PBXBuildFile; fileRef = 25D0B278222E8209003C9B2D /* UIButton+MCImageText.m */; };
 		25D0B2E6222E8209003C9B2D /* UIView+MCLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 25D0B27D222E8209003C9B2D /* UIView+MCLine.m */; };
@@ -98,6 +100,10 @@
 		1A666D4E6CAFE6F8A5A9BC82 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		1A666DF95F7DF1FB02988932 /* ListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListController.h; sourceTree = "<group>"; };
 		1A666E3B4D92F37B2542C7D7 /* TestTableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestTableController.h; sourceTree = "<group>"; };
+		256FCB0D22CD9866002E4A9B /* MCToastUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCToastUtils.h; sourceTree = "<group>"; };
+		256FCB0E22CD9866002E4A9B /* UIView+MCToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MCToast.h"; sourceTree = "<group>"; };
+		256FCB0F22CD9866002E4A9B /* MCToastUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCToastUtils.m; sourceTree = "<group>"; };
+		256FCB1022CD9866002E4A9B /* UIView+MCToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MCToast.m"; sourceTree = "<group>"; };
 		25D0B202222E81DE003C9B2D /* MCUIKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MCUIKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		25D0B205222E81DE003C9B2D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		25D0B206222E81DE003C9B2D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -177,7 +183,7 @@
 		25D0B26E222E8209003C9B2D /* MCHUDView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCHUDView.h; sourceTree = "<group>"; };
 		25D0B271222E8209003C9B2D /* UIButton+MCBackgroundColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+MCBackgroundColor.m"; sourceTree = "<group>"; };
 		25D0B272222E8209003C9B2D /* UIImage+MCCreate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+MCCreate.h"; sourceTree = "<group>"; };
-		25D0B273222E8209003C9B2D /* UIView+Extend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extend.m"; sourceTree = "<group>"; };
+		25D0B273222E8209003C9B2D /* UIView+MCExtend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MCExtend.m"; sourceTree = "<group>"; };
 		25D0B274222E8209003C9B2D /* UIControl+MCMultiClick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+MCMultiClick.h"; sourceTree = "<group>"; };
 		25D0B275222E8209003C9B2D /* UIImage+MCCompress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+MCCompress.m"; sourceTree = "<group>"; };
 		25D0B276222E8209003C9B2D /* UIAlertController+MCSupportedInterfaceOrientations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+MCSupportedInterfaceOrientations.h"; sourceTree = "<group>"; };
@@ -185,7 +191,7 @@
 		25D0B27D222E8209003C9B2D /* UIView+MCLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MCLine.m"; sourceTree = "<group>"; };
 		25D0B27E222E8209003C9B2D /* UIView+MCCorner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MCCorner.m"; sourceTree = "<group>"; };
 		25D0B280222E8209003C9B2D /* UIControl+MCMultiClick.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+MCMultiClick.m"; sourceTree = "<group>"; };
-		25D0B281222E8209003C9B2D /* UIView+Extend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extend.h"; sourceTree = "<group>"; };
+		25D0B281222E8209003C9B2D /* UIView+MCExtend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MCExtend.h"; sourceTree = "<group>"; };
 		25D0B282222E8209003C9B2D /* UIImage+MCCreate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+MCCreate.m"; sourceTree = "<group>"; };
 		25D0B283222E8209003C9B2D /* UIButton+MCBackgroundColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+MCBackgroundColor.h"; sourceTree = "<group>"; };
 		25D0B284222E8209003C9B2D /* UIAlertController+MCSupportedInterfaceOrientations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+MCSupportedInterfaceOrientations.m"; sourceTree = "<group>"; };
@@ -271,6 +277,17 @@
 				1A6662AA4AD3FC09FDC42096 /* Demo */,
 			);
 			path = Code;
+			sourceTree = "<group>";
+		};
+		256FCB0C22CD9866002E4A9B /* Toast */ = {
+			isa = PBXGroup;
+			children = (
+				256FCB0D22CD9866002E4A9B /* MCToastUtils.h */,
+				256FCB0E22CD9866002E4A9B /* UIView+MCToast.h */,
+				256FCB0F22CD9866002E4A9B /* MCToastUtils.m */,
+				256FCB1022CD9866002E4A9B /* UIView+MCToast.m */,
+			);
+			path = Toast;
 			sourceTree = "<group>";
 		};
 		25D0B1F9222E81DE003C9B2D = {
@@ -473,7 +490,7 @@
 			children = (
 				25D0B271222E8209003C9B2D /* UIButton+MCBackgroundColor.m */,
 				25D0B272222E8209003C9B2D /* UIImage+MCCreate.h */,
-				25D0B273222E8209003C9B2D /* UIView+Extend.m */,
+				25D0B273222E8209003C9B2D /* UIView+MCExtend.m */,
 				25D0B274222E8209003C9B2D /* UIControl+MCMultiClick.h */,
 				25D0B275222E8209003C9B2D /* UIImage+MCCompress.m */,
 				25D0B276222E8209003C9B2D /* UIAlertController+MCSupportedInterfaceOrientations.h */,
@@ -481,7 +498,7 @@
 				25D0B27D222E8209003C9B2D /* UIView+MCLine.m */,
 				25D0B27E222E8209003C9B2D /* UIView+MCCorner.m */,
 				25D0B280222E8209003C9B2D /* UIControl+MCMultiClick.m */,
-				25D0B281222E8209003C9B2D /* UIView+Extend.h */,
+				25D0B281222E8209003C9B2D /* UIView+MCExtend.h */,
 				25D0B282222E8209003C9B2D /* UIImage+MCCreate.m */,
 				25D0B283222E8209003C9B2D /* UIButton+MCBackgroundColor.h */,
 				25D0B284222E8209003C9B2D /* UIAlertController+MCSupportedInterfaceOrientations.m */,
@@ -531,6 +548,7 @@
 		25D0B2B6222E8209003C9B2D /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				256FCB0C22CD9866002E4A9B /* Toast */,
 				25D0B2B7222E8209003C9B2D /* MJRefresh */,
 			);
 			path = Vendor;
@@ -718,6 +736,7 @@
 				25D0B2DC222E8209003C9B2D /* MCSearchBar.m in Sources */,
 				25D0B2BE222E8209003C9B2D /* MCGridController.m in Sources */,
 				25D0B2C5222E8209003C9B2D /* MCEmptyGridController.m in Sources */,
+				256FCB1222CD9866002E4A9B /* UIView+MCToast.m in Sources */,
 				25D0B2F6222E8209003C9B2D /* NSFileManager+MCHelp.m in Sources */,
 				25D0B2F0222E8209003C9B2D /* NSNumber+MCText.m in Sources */,
 				25D0B2EA222E8209003C9B2D /* UIImage+MCCreate.m in Sources */,
@@ -740,12 +759,13 @@
 				25D0B2E4222E8209003C9B2D /* UIButton+MCImageText.m in Sources */,
 				25D0B2CF222E8209003C9B2D /* MCTableHeaderFooterView.m in Sources */,
 				25D0B2DF222E8209003C9B2D /* MCHUDView.m in Sources */,
+				256FCB1122CD9866002E4A9B /* MCToastUtils.m in Sources */,
 				25D0B2F1222E8209003C9B2D /* NSDate+MCAgo.m in Sources */,
 				25D0B2E9222E8209003C9B2D /* UIControl+MCMultiClick.m in Sources */,
 				25D0B2DB222E8209003C9B2D /* MCTextField.m in Sources */,
 				25D0B2C6222E8209003C9B2D /* MCRefreshTableController.m in Sources */,
 				25D0B207222E81DE003C9B2D /* AppDelegate.m in Sources */,
-				25D0B2E2222E8209003C9B2D /* UIView+Extend.m in Sources */,
+				25D0B2E2222E8209003C9B2D /* UIView+MCExtend.m in Sources */,
 				25D0B2D3222E8209003C9B2D /* MCTapCell.m in Sources */,
 				1A666B2EBEB04CEA9D1F5BEB /* ListController.m in Sources */,
 				1A666A2D910791E0D022D901 /* ListDataVM.m in Sources */,
