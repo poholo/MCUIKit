@@ -7,7 +7,6 @@
 
 #import "MBProgressHUD.h"
 
-#import "AppDelegate.h"
 
 static MBProgressHUD *progressHUD;
 

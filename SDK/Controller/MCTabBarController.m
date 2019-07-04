@@ -6,7 +6,6 @@
 #import "MCTabBarController.h"
 
 #import "MCNavController.h"
-#import "AppDelegate.h"
 
 @implementation MCTabBarController
 

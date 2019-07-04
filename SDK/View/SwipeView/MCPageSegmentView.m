@@ -6,6 +6,7 @@
 #import "MCPageSegmentView.h"
 
 #import <HMSegmentedControl/HMSegmentedControl.h>
+#import <Masonry.h>
 
 #import "MCSwipeView.h"
 
@@ -41,8 +42,8 @@
 
     self.segmentedControl = [[HMSegmentedControl alloc] initWithSectionTitles:titles];
     self.segmentedControl.selectionIndicatorLocation = HMSegmentedControlSelectionIndicatorLocationNone;
-    self.segmentedControl.titleTextAttributes = @{NSForegroundColorAttributeName : [UIColor blackColor], NSFontAttributeName : [UIFont systemFontOfSize:18.0f]};
-    self.segmentedControl.selectedTitleTextAttributes = @{NSForegroundColorAttributeName : [UIColor yellowColor], NSFontAttributeName : [UIFont systemFontOfSize:18.0f]};
+    self.segmentedControl.titleTextAttributes = @{NSForegroundColorAttributeName: [UIColor blackColor], NSFontAttributeName: [UIFont systemFontOfSize:18.0f]};
+    self.segmentedControl.selectedTitleTextAttributes = @{NSForegroundColorAttributeName: [UIColor yellowColor], NSFontAttributeName: [UIFont systemFontOfSize:18.0f]};
     [self.segmentedControl addTarget:self action:@selector(changeValue) forControlEvents:UIControlEventValueChanged];
     self.segmentedControl.userInteractionEnabled = YES;
     [self addSubview:self.segmentedControl];
@@ -53,25 +54,20 @@
 }
 
 - (void)createPageSegmentLayout {
-//    @weakify(self);
-//    [self.segmentedControl mas_makeConstraints:^(MASConstraintMaker *make) {
-//        @strongify(self);
-//        make.top.left.right.equalTo(self);
-//        make.height.mas_equalTo(44.0f);
-//    }];
-//HMSegmentedControl.h
-//    [self.swipeView mas_makeConstraints:^(MASConstraintMaker *make) {
-//        @strongify(self);
-//        make.top.equalTo(self.segmentedControl.mas_bottom);
-//        make.bottom.left.right.equalTo(self);
-//    }];
-//
-//    [self.liveView mas_makeConstraints:^(MASConstraintMaker *make) {
-//        @strongify(self);
-//        make.left.right.equalTo(self);
-//        make.bottom.equalTo(self.segmentedControl.mas_bottom);
-//        make.height.mas_equalTo(0.5f);
-//    }];
+    [self.segmentedControl mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.left.right.equalTo(self);
+        make.height.mas_equalTo(44.0f);
+    }];
+    [self.swipeView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self.segmentedControl.mas_bottom);
+        make.bottom.left.right.equalTo(self);
+    }];
+
+    [self.liveView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.right.equalTo(self);
+        make.bottom.equalTo(self.segmentedControl.mas_bottom);
+        make.height.mas_equalTo(0.5f);
+    }];
 }
 
 - (void)changeValue {

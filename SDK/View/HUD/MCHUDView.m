@@ -10,8 +10,6 @@
 
 #import <MBProgressHUD/MBProgressHUD.h>
 
-#import "AppDelegate.h"
-
 static MBProgressHUD *hud;
 
 @implementation MCHUDView
